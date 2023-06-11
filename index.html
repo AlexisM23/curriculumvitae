@@ -10,7 +10,7 @@
     <meta property="og:type" content="website">
     <meta property="og:image" itemprop="image primaryImageOfPage"
         content="https://static-00.iconduck.com/assets.00/resume-icon-1024x1024-nutrvj35.png">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -23,10 +23,15 @@
             color: #1b5199;
             font-size: 36px;
             margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .section {
             margin-bottom: 40px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .section h2 {
@@ -37,7 +42,7 @@
 
         .section p {
             color: #333;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         .section ul {
@@ -68,15 +73,77 @@
             height: 30px;
             object-fit: cover;
             vertical-align: middle;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.2);
         }
 
         .social-icons a {
             color: #1b5199;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         .social-icons a:hover {
             text-decoration: underline;
+            color: #6c63ff;
+        }
+
+        .education {
+            background-color: #f1f5f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .education h3 {
+            color: #1b5199;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .experience {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .experience h3 {
+            color: #1b5199;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .experience ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .experience li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .experience li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #6c63ff;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px;
+                margin: 0 auto;
+            }
         }
     </style>
 </head>
@@ -87,14 +154,16 @@
 
         <div class="section">
             <h2 class="text-2xl font-bold">Datos Personales</h2>
-            <img src="https://drive.google.com/uc?id=1ijUKJQ1Caiwe1Hwxh092lYRIg2pLeWHs"
-                class="profile-picture mx-auto" alt="Profile Picture">
-            <p class="text-lg"><strong>Nombre:</strong> Roy Alexis Mejía Huacón</p>
-            <p class="text-lg"><strong>Fecha de nacimiento:</strong> 17 de marzo de 2003</p>
-            <p class="text-lg"><strong>Dirección:</strong> Coop. Nueva Jerusalén, Cabecera Cantonal, Samborondón
-            </p>
-            <p class="text-lg"><strong>Teléfono:</strong> +593993686769</p>
-            <p class="text-lg"><strong>Email:</strong> <a href="mailto:roy.mejiah@ug.edu.ec"
+            <div class="flex justify-center">
+                <img src="https://drive.google.com/uc?id=1ijUKJQ1Caiwe1Hwxh092lYRIg2pLeWHs" class="profile-picture"
+                    alt="Profile Picture">
+            </div>
+            <p class="text-lg text-center my-2"><strong>Nombre:</strong> Roy Alexis Mejía Huacón</p>
+            <p class="text-lg text-center my-2"><strong>Fecha de nacimiento:</strong> 17 de marzo de 2003</p>
+            <p class="text-lg text-center my-2"><strong>Dirección:</strong> Coop. Nueva Jerusalén, Cabecera Cantonal,
+                Samborondón</p>
+            <p class="text-lg text-center my-2"><strong>Teléfono:</strong> +593993686769</p>
+            <p class="text-lg text-center my-2"><strong>Email:</strong> <a href="mailto:roy.mejiah@ug.edu.ec"
                     class="text-blue-500">roy.mejiah@ug.edu.ec</a></p>
         </div>
 
@@ -112,22 +181,26 @@
 
         <div class="section">
             <h2 class="text-2xl font-bold">Repositorios</h2>
-            <a href="https://mejiapersonajes.github.io/" target="_blank" title="Personajes"
-                class="text-blue-500">Personajes</a><br>
-            <img src="https://drive.google.com/uc?id=1p9fwM-QSZ1OJk9nX5PAFM3WP3DTPcPsb"
-                class="mx-auto my-4 rounded-lg shadow-md" alt="Personajes Screenshot">
+            <div class="flex justify-center">
+                <a href="https://mejiapersonajes.github.io/" target="_blank" title="Personajes"
+                    class="text-blue-500">Personajes</a>
+            </div>
+            <div class="flex justify-center mt-4">
+                <img src="https://drive.google.com/uc?id=1p9fwM-QSZ1OJk9nX5PAFM3WP3DTPcPsb" class="rounded-lg shadow-md"
+                    alt="Personajes Screenshot">
+            </div>
         </div>
 
-        <div class="section">
+        <div class="section education">
             <h2 class="text-2xl font-bold">Educación</h2>
-            <p class="text-lg"><strong>Universidad de Guayaquil</strong></p>
+            <a href="https://www.ug.edu.ec/" target="_blank" title="Universidad de Guayaquil" class="text-xl font-bold">Universidad de Guayaquil</a>
             <p class="text-lg">Sistemas de Información</p>
             <p class="text-lg">En curso - Desde 2021</p>
         </div>
 
-        <div class="section">
+        <div class="section experience">
             <h2 class="text-2xl font-bold">Experiencia Laboral</h2>
-            <p class="text-lg"><strong>Cámara de Comercio de Samborondón</strong></p>
+            <h3 class="text-xl font-bold">Cámara de Comercio de Samborondón</h3>
             <p class="text-lg">Auxiliar Administrativo</p>
             <p class="text-lg">2019 - 2020</p>
             <p class="text-lg">Responsabilidades:</p>

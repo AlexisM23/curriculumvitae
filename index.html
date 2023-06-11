@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,21 @@
     <title>Curriculum Vitae</title>
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135800.png">
     <meta property="og:type" content="website">
-    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://static-00.iconduck.com/assets.00/resume-icon-1024x1024-nutrvj35.png">
-</head>
-<style>
+    <meta property="og:image" itemprop="image primaryImageOfPage"
+        content="https://static-00.iconduck.com/assets.00/resume-icon-1024x1024-nutrvj35.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #E5F2FF;
-            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
             padding: 20px;
         }
 
-        h1 {
-            color: #333;
+        .cv-heading {
             text-align: center;
-        }
-
-        h2 {
-            color: #555;
-            margin-top: 30px;
+            color: #1b5199;
+            font-size: 36px;
+            margin-bottom: 30px;
         }
 
         .section {
@@ -32,81 +30,115 @@
         }
 
         .section h2 {
+            color: #1b5199;
+            font-size: 24px;
             margin-bottom: 20px;
         }
 
         .section p {
+            color: #333;
             margin-bottom: 5px;
         }
 
         .section ul {
             margin-top: 0;
+            color: #333;
         }
 
-        img {
-            display: inline-block;
+        .profile-picture {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .social-icons img {
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
             vertical-align: middle;
-            margin-bottom: 10px;
         }
 
-        a {
+        .social-icons a {
             color: #1b5199;
             text-decoration: none;
-            display: inline-block;
-            vertical-align: middle;
         }
-    
-        a:hover {
+
+        .social-icons a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
-    <body style="background-color:#E5F2FF;">
-<h1>Currículum Vitae</h1>
+    <div class="container mx-auto">
+        <h1 class="cv-heading text-4xl font-bold">Currículum Vitae</h1>
 
-<div class="section">
-    <h2>Datos Personales</h2>
-    <img src="https://i.ibb.co/svPNvdW/removal-ai-ab31253e-1567-4f9b-a898-67266465ee4c.png" width="90" height="110" />
-    <p><strong>Nombre:</strong> Roy Alexis Mejía Huacón</p>
-    <p><strong>Fecha de nacimiento:</strong> 17 de marzo de 2003</p>
-    <p><strong>Dirección:</strong> Coop. Nueva Jerusalén, Cabecera Cantonal, Samborondón</p>
-    <p><strong>Teléfono:</strong> +593993686769</p>
-    <p><strong>Email:</strong> roy.mejiah@ug.edu.ec</p>
-</div>
+        <div class="section">
+            <h2 class="text-2xl font-bold">Datos Personales</h2>
+            <img src="https://doc-10-8k-docs.googleusercontent.com/docs/securesc/10l81fl0tv6ggfb12om23dod1h6f25vn/3dptq3a1ueq0elkc79ofrpaquk5lhos0/1686510675000/03440862656123337463/03819673683359421807/1ijUKJQ1Caiwe1Hwxh092lYRIg2pLeWHs?ax=ADWCPKC5FVeOsNKbheEQSuSsPnX_KJbv-TlK46weFIWc_554xdMfszSfgymZnDsJB-3f9fnQm7Tg0domihFjDuRbGHXzRVAXslF0QgZLpa1cWAiXYDRBqxXpiRmAv9c9Zq0wrKmCcKKIzlCy_kn1m8KBrCa-z1LDtTP5ITD_CberZSuENy8tgZu_ln1U_0ZBFRUcZWsvi9KyV1hiPAzrNgSmQ0HBoJqSHtCFTyb4-gvm0LgwazE0Cqjpid40syT3SSyqloFUHHg0kTqVQAg7yqji6IXR3YqDoS-eB0kg9RShdt493NvQQIpLPfOo3naxX1PppM4f2KF5I6MdmoAcgj5Nt1O3SOwJA9pqJs2QrNEDGXW-8Ms-Vaui2Py0ZJ3IkeIgc8wxATM9Os_wvh4t9RwEfG6r6OoWHMbPOWoPFAwe8rRooCSD6Aoavlfu1Kja7R3em51jcuZdKhdXMi_vtUmTkDnj7RLBREMMGe8oWjJcoePjVeBhVZOMfqcQpmp9JMNDP4Im1Gy0uRWBH8lRlgt94eiUOmezV-Lv0yb0MaMGwQzpdE6YxBQscbkjoaJ93nn_ylAHgo4_OPiWAx0KZwQL4KgLgALRSbPHHQZu33KgSQnaD1f8LO_Hs5sevijRigXvKhlEDP5P_NzNiKle7BSqO72BhMK5tLWG3clw1DLGDG6cY_zSTMp3W448csEfa6toMlCFvR1RTNS6ujmkxkKS-S6uNmiGDsVIhIviIcjMjO3jN1loZX4lsKLrwTweP3iAmVuqS_P1UrxV8wJcHOBeQ9hkws-nZ9nrpYB8Wy_tRmFLrR7MXYN3nnmjAsJ7U38d7xoKcLUUcXo3otvp4PRsx_3HpfPt2sjLUVHVmCVGOo_grA53s3c7KcI3669VDZPhwmGwiFbwXMgTW-Li6RIOBgdmd2GSMnVEyHb6yyhoW2vd5qWdn5JCQZeQfak2k0PypUoIHy7UK13Sr4EJJgw_JvdQ-szekndaZSxodVqCcmHpi1yTiDAYcFlVf2MSkuDLcqJsqs4MRcFl88bk8R14WDVWkvMXRMxL36DuzQvKzdd6fPYTK-w&uuid=3cce1cab-d8db-4e86-ae1d-bfe6b894397d&authuser=0&nonce=cop1l6a2j50nu&user=03819673683359421807&hash=npr5kbe46n6ukormug7v4pf8bsgmssb1"
+                class="profile-picture mx-auto" alt="Profile Picture">
+            <p class="text-lg"><strong>Nombre:</strong> Roy Alexis Mejía Huacón</p>
+            <p class="text-lg"><strong>Fecha de nacimiento:</strong> 17 de marzo de 2003</p>
+            <p class="text-lg"><strong>Dirección:</strong> Coop. Nueva Jerusalén, Cabecera Cantonal, Samborondón
+            </p>
+            <p class="text-lg"><strong>Teléfono:</strong> +593993686769</p>
+            <p class="text-lg"><strong>Email:</strong> <a href="mailto:roy.mejiah@ug.edu.ec"
+                    class="text-blue-500">roy.mejiah@ug.edu.ec</a></p>
+        </div>
 
-<div class="section">
-    <h2>Redes Sociales</h2>
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="20" height="20" /> <a href="https://www.youtube.com/c/AlexisM23" target="_blank" title="YouTube">YouTube</a><br>
-    <img src="https://cdn-icons-png.flaticon.com/512/4138/4138198.png" width="20" height="20" /> <a href="https://www.tiktok.com/@alexism23xd" target="_blank" title="TikTok">TikTok</a><br>
-    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="20" height="20" /> <a href="https://github.com/AlexisM23" target="_blank" title="GitHub">GitHub</a>
-</div>
+        <div class="section">
+            <h2 class="text-2xl font-bold">Redes Sociales</h2>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/c/AlexisM23" target="_blank" title="YouTube"><img
+                        src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Icon"></a>
+                <a href="https://www.tiktok.com/@alexism23xd" target="_blank" title="TikTok"><img
+                        src="https://cdn-icons-png.flaticon.com/512/4138/4138198.png" alt="TikTok Icon"></a>
+                <a href="https://github.com/AlexisM23" target="_blank" title="GitHub"><img
+                        src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Icon"></a>
+            </div>
+        </div>
 
-<div class="section">
-    <h2>Repositorios</h2>
-    <a href="https://mejiapersonajes.github.io/" target="_blank" title="Personajes">Personajes</a><br>
-    <img src="https://i.ibb.co/CsGtHpL/Captura-de-pantalla-2023-06-05-084936.png" width="300" height="150"/> 
-</div>
+        <div class="section">
+            <h2 class="text-2xl font-bold">Repositorios</h2>
+            <a href="https://mejiapersonajes.github.io/" target="_blank" title="Personajes"
+                class="text-blue-500">Personajes</a><br>
+            <img src="https://doc-10-8k-docs.googleusercontent.com/docs/securesc/10l81fl0tv6ggfb12om23dod1h6f25vn/ehbs6nb7tturofk2a726ldu03r7t7rh7/1686510825000/03440862656123337463/03819673683359421807/1p9fwM-QSZ1OJk9nX5PAFM3WP3DTPcPsb?ax=ADWCPKAWgfBc9-9cITYcG2-0Sq15heWZamJX-HABHoyEKon6HRc7h0-zSYBzaWWx0A3985S3cpuLbZqMt2eXg7ye7PeK76u05iW1S1ctnxEsPtPoH03U5L8UVGxSv-biCbzTTkLS4R2Ag_rcN31XoM5avOKNg0UM2GAPAQteOrINtXZ0tdKoxA9VDiF8k6WrF7FmsEKf0oGLFp8NVDYbA6YzD83lk7zQ8zvMvTK1en7maTHHzt9Xlg0zuDn6fUqa4knIAl3NEyYkEslZttiyWdYFLD0yaTNJqlBkyWcOM4hHb8S3QGR76_t-PBczJQOZCQk67Fq9aSkJ62xa7yS6AOCJ8PnD_ZHqiFaambBiB8UbFbeJ9s320ZsNLXRL3WouBLtUkgO4pHXjasW7nVuMfCmxOPxRDTQiGtQSkCqO1fYMGLkjrYgOSxJMxz8rJHeW2dReqJExqRhqQHL8XuEnp3qWzDNFsxDwTnPeSEQvuCTXdbA-FXfEyeBsPRkOWwYTShf5PHZAFmBxZ3fdwcvhw9EdhJUKXoNJm6Vn49TawryUoodgn2NqmCh-2xNlq6fuBg3FYIKbD2LgeUQ0dI4JVZEHYa-_mSjivn6yN796Hwx4y4l_AZZQ7Pu1Chr8j5nLwGlXNungrYlBkSLJ9Rm_c__KWRszqYJRl3gbGeqoWrp5MDxucWyM0Wn5dIGx0HyvloesrlvstA3dglfg493LHUO_7iFS3IjmxkLZrPDZIQyFkFgRL5aaKCgf2f-dOTKqzN3Of88qtR3YrgYz_zh2PbyzZxk5AsGHPSiqQEnHsycUREMy3McUL96vMJKOhBXsLAfeXhqPF5R4klZ3DRHNbw-thTwfrkZxsggmY48IfsYLC-dAIfx7NVO73_xKlhPXHTEtTBfCsUiCpumRBhurLOHXmO1pYAjFPdDlbAx562iB4mMXx6zIxSo-LOyK_C_g18yovQSgErHDXUXHD68A-UJb9uVzKpaXUt6LMYJkqsopJtjOAt0VRlc3q7NOr3hOTPBRE3Yyt19czPjIUf-QIqbnAFwduPYEHwQENZ_ImnjpXwRsJj7Fugk&uuid=30af6d86-45b7-4e4c-ae64-047585513045&authuser=0"
+                class="mx-auto my-4 rounded-lg shadow-md" alt="Personajes Screenshot">
+        </div>
 
-<div class="section">
-    <h2>Educación</h2>
-    <p><strong>Universidad de Guayaquil</strong></p>
-    <p>Sistemas de Información</p>
-    <p>En curso - Desde 2021</p>
-</div>
+        <div class="section">
+            <h2 class="text-2xl font-bold">Educación</h2>
+            <p class="text-lg"><strong>Universidad de Guayaquil</strong></p>
+            <p class="text-lg">Sistemas de Información</p>
+            <p class="text-lg">En curso - Desde 2021</p>
+        </div>
 
-<div class="section">
-    <h2>Experiencia Laboral</h2>
-    <p><strong>Cámara de Comercio de Samborondón</strong></p>
-    <p>Auxiliar Administrativo</p>
-    <p>2019 - 2020</p>
-    <p>Responsabilidades:</p>
-    <ul>
-    <li>Asistencia de clientes</li>
-    <li>Colaboración en proyectos de equipo</li>
-    <li>Resolución de problemas técnicos</li>
-    </ul>
-</div>
-
+        <div class="section">
+            <h2 class="text-2xl font-bold">Experiencia Laboral</h2>
+            <p class="text-lg"><strong>Cámara de Comercio de Samborondón</strong></p>
+            <p class="text-lg">Auxiliar Administrativo</p>
+            <p class="text-lg">2019 - 2020</p>
+            <p class="text-lg">Responsabilidades:</p>
+            <ul>
+                <li class="text-lg">Asistencia de clientes</li>
+                <li class="text-lg">Colaboración en proyectos de equipo</li>
+                <li class="text-lg">Resolución de problemas técnicos</li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
+
